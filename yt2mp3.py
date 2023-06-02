@@ -8,8 +8,8 @@ yt = YouTube(str(input("Enter the URL of the video you want to download: \n>> ")
 video = yt.streams.filter(only_audio=True).first()
 
 # check for destination to save file
-print("Enter the destination (leave blank for current directory)")
-destination = str(input(">> ")) or '.'
+#print("Enter the destination (leave blank for current directory)")
+destination = '.' #str(input(">> ")) or '.'
 
 # download the file
 out_file = video.download(output_path=destination)
